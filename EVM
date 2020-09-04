@@ -1,0 +1,1065 @@
+#include<iostream.h>
+#include<fstream.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<stdio.h>
+int n;
+/******************************************************************
+************************ class started ****************************
+*******************************************************************/
+class event
+{
+ private:
+ char name[30];
+ double nt;
+ int evcode;
+ public:
+ int cde;
+  void input1()
+  {
+   cout<<"\t\t\t\tEnter code(only 1-100 Numbers): ";
+   cin>>cde;
+   cout<<"\t\t\t\tEnter Your Name: ";
+   gets(name);
+   evcode=n;
+   cout<<"\t\t\t\tEnter Number of Tickets: ";
+   cin>>nt;
+   cout<<"\t\t\t-----------------------------------------------------------\n\n";
+  }
+  void input2()
+  {
+   cout<<"\t\t\t\tEnter code(only 1-100 Numbers): ";
+   cin>>cde;
+   cout<<"\t\t\t\tEnter Your Name: ";
+   gets(name);
+   evcode=n;
+   cout<<"\t\t\t\tEnter Number of Tickets: ";
+   cin>>nt;
+   cout<<"\t\t\t-----------------------------------------------------------\n\n";
+  }
+  void input3()
+  {
+   cout<<"\t\t\t\tEnter code(only 1-100 Numbers): ";
+   cin>>cde;
+   cout<<"\t\t\t\tEnter Your Name: ";
+   gets(name);
+   evcode=n;
+   cout<<"\t\t\t\tEnter Number of Tickets: ";
+   cin>>nt;
+   cout<<"\t\t\t-----------------------------------------------------------\n\n";
+  }
+  void input4()
+  {
+   cout<<"\t\t\t\tEnter code(only 1-100 Numbers): ";
+   cin>>cde;
+   cout<<"\t\t\t\tEnter Your Name: ";
+   gets(name);
+   evcode=n;
+   cout<<"\t\t\t\tEnter Number of Tickets: ";
+   cin>>nt;
+   cout<<"\t\t\t-----------------------------------------------------------\n\n";
+  }
+  void input5()
+  {
+   cout<<"\t\t\t\tEnter code(only 1-100 Numbers): ";
+   cin>>cde;
+   cout<<"\t\t\t\tEnter Your Name: ";
+   gets(name);
+   evcode=n;
+   cout<<"\t\t\t\tEnter Number of Tickets: ";
+   cin>>nt;
+   cout<<"\t\t\t-----------------------------------------------------------\n\n";
+  }
+  int check()
+  {
+   return evcode;
+  }
+  int check1()
+  {
+   return cde;
+  }
+  void display1(int x=6000)
+  {
+    cout<<"-----------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\t\t\t\tName: "<<name<<"\n";
+    cout<<"\t\t\t\tNo Of Tickets Sold to You: "<<nt<<"\n";
+    cout<<"\t\t\t\tPrice You need To Pay: "<<(nt*x)<<"\n";
+  }
+  void display2(int y=250)
+  {
+    cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\t\t\t\tName: "<<name<<"\n";
+    cout<<"\t\t\t\tNo Of Tickets Sold to You: "<<nt<<"\n";
+    cout<<"\t\t\t\tPrice You need To Pay: "<<(nt*y)<<"\n";
+  }
+  void display3(int z=280)
+  {
+    cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\t\t\t\tName: "<<name<<"\n";
+    cout<<"\t\t\t\tNo Of Tickets Sold to You: "<<nt<<"\n";
+    cout<<"\t\t\t\tPrice You need To Pay: "<<(nt*z)<<"\n";
+  }
+  void display4(int a=300)
+  {
+    cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\t\t\t\tName: "<<name<<"\n";
+    cout<<"\t\t\t\tNo Of Tickets Sold to You: "<<nt<<"\n";
+    cout<<"\t\t\t\tPrice You need To Pay: "<<(nt*a)<<"\n";
+  }
+  void display5(int b=250)
+  {
+    cout<<"-------------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\t\t\t\tName: "<<name<<"\n";
+    cout<<"\t\t\t\tNo Of Tickets Sold to You: "<<nt<<"\n";
+    cout<<"\t\t\t\tPrice You need To Pay: "<<(nt*b)<<"\n";
+  }
+}s1;
+/***********************************************************
+***********************class ends***************************
+************************************************************/
+
+/******************************************************************************************************************************************************************/
+void krc()
+{
+ clrscr();
+ n=1;
+ fstream fo;
+ fo.open("people11.dat",ios::app|ios::in|ios::binary);
+ int ch,nt;
+ double amt=0.0;
+ here:
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nKEITH RICHARDS is an international artist from Canada.\nHis ensemble consists of hits like 'Knockin on Heaven's Door','Summer of 69'\nand 'Coming Home'.\nHe will be performing in Surat for his album'Reputation'.\nAlso he will be performing his major hits with opening acts from the likes of 'Nucleya' and 'Divine'\n";
+ cout<<"\nDates:29th to 31th November\n";
+ cout<<"\nVenue:Wembley Stadium\n";
+ cout<<"Time: 6:00(Kindly Enter From Front Gate and Carry Your Passes Along)";
+ cout<<"Ticket Price: 6000INR\n\n\n\n";
+ cout<<"Please Make Sure You Enter Correct Name And Code Because They Further Cannot be Modified.\nOnly Ticket Prices Can be Modified Later By Administrator.\nAnd Please Remember Your Code....\n\n";
+ s1.input1();
+ fo.write((char*)&s1,sizeof(s1));
+ cout<<"\t\t\t\tNow Your Ticket Is Confirmed For The Show\n";
+ getch();
+ fo.close();
+}
+
+
+void sfe()
+{
+ clrscr();
+ n=2;
+ fstream fo;
+ fo.open("people12.dat",ios::app|ios::in|ios::binary);
+ int ch,nt;
+ double amt=0.0;
+ here:
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\Sunshine is new State-of-the-art medical institution.\nIt focuses on helping people in innovative medical ways.\nThis Fundraiser's event is to help  raise funds for the mentally challenged and help the hospital etxtend their help more.\n";
+ cout<<"\nDates:28 December\n";
+ cout<<"\nVenue:Mark Community Hall";
+ cout<<"Time: 8:30";
+ cout<<"Ticket Price: 250INR\n\n\n";
+ cout<<"Please Make Sure You Enter Correct Name And Code Because They Further Cannot be Modified.\nOnly Ticket Prices Can be Modified Later By Administrator.\nAnd Please Remember Your Code....\n\n";
+ s1.input2();
+ fo.write((char*)&s1,sizeof(s1));
+ cout<<"\t\t\t\tNow Your Ticket Is Confirmed For The Show\n";
+ getch();
+ fo.close();
+}
+
+
+void tm()
+{
+ clrscr();
+ n=3;
+ fstream fo;
+ fo.open("people13.dat",ios::app|ios::in|ios::binary);
+ int ch,nt;
+ double amt=0.0;
+ here:
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nA mythological stoy about a goddess who created the entire universe. \nThe plot revolves around the consequences when humans build a temple for her first born.\n";
+ cout<<"\nDates:12th October";
+ cout<<"\nVenue:Cinepolis Multiplex\n";
+ cout<<"Time: 3:15pm";
+ cout<<"Ticket Price: 280INR\n\n\n";
+ cout<<"Please Make Sure You Enter Correct Name And Code Because They Further Cannot be Modified.\nOnly Ticket Prices Can be Modified Later By Administrator.\nAnd Please Remember Your Code....\n\n";
+ s1.input3();
+ fo.write((char*)&s1,sizeof(s1));
+ cout<<"\t\t\t\tNow Your Ticket Is Confirmed For The Show\n";
+ getch();
+ fo.close();
+}
+
+
+void twilight()
+{
+ clrscr();
+ n=4;
+ fstream fo;
+ fo.open("people14.dat",ios::app|ios::in|ios::binary);
+ int ch,nt;
+ double amt=0.0;
+ here:
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nA love story involving vampires and wolves.\nWhen a girl ,Bella  meets a boy named Edward with secrets......\nProblems arise when she falls in love and discovers that he is not a mere mortal.\n";
+ cout<<"\nDates:10th Decembern";
+ cout<<"\nVenue:PVR Cinemas\n";
+ cout<<"Time: 11:00";
+ cout<<"Ticket Price: 300INR\n\n\n";
+ cout<<"Please Make Sure You Enter Correct Name And Code Because They Further Cannot be Modified.\nOnly Ticket Prices Can be Modified Later By Administrator.\nAnd Please Remember Your Code....\n\n";
+ s1.input4();
+ fo.write((char*)&s1,sizeof(s1));
+ cout<<"\t\t\t\tNow Your Ticket Is Confirmed For The Show\n";
+ getch();
+ fo.close();
+}
+
+
+void gge()
+{
+ clrscr();
+ n=5;
+ fstream fo;
+ fo.open("people15.dat",ios::app|ios::in|ios::binary);
+ int ch,nt;
+ double amt=0.0;
+ here:
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nAe Halo!!!!.\n. An event organised by Shiv Entertainment.\nBring your friends and family along and groove to the garba beats. \n Also dance to to the fabulous performances from Falguni Pathak\n";
+ cout<<"\nDates:10th October\n";
+ cout<<"\nVenue:Indoor Stadium\n";
+ cout<<"Time: :30pm";
+ cout<<"Ticket Price: 250INR\n\n";
+ s1.input5();
+ fo.write((char*)&s1,sizeof(s1));
+ cout<<"\t\t\t\tNow Your Ticket Is Confirmed For The Show\n";
+ getch();
+ fo.close();
+}
+/*****************************************************************************************************************************************************************/
+
+void showdetailsall()
+{
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nKEITH RICHARDS is an international artist from Canada.\nHis ensemble consists of hits like 'Knockin on Heaven's Door','Summer of 69'\nand 'Coming Home'.\nHe will be performing in Surat for his album'Reputation'.\nAlso he will be performing his major hits with opening acts from the likes of 'Nucleya' and 'Divine'\n";
+ cout<<"\nDates:29th to 31th November\n";
+ cout<<"\nVenue:Wembley Stadium\n";
+ cout<<"Time: 6:00(Kindly Enter From Front Gate and Carry Your Passes Along)\n";
+ cout<<"Ticket Price: 6000INR\n\n";
+ fstream fo;
+ fo.open("people11.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  s1.display1();
+ }
+ getch();
+ fo.close();
+ cout<<"\n\n\n\n\n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\Sunshine is new State-of-the-art medical institution.\nIt focuses on helping people in innovative medical ways.\nThis Fundraiser's event is to help  raise funds for the mentally challenged and help the hospital etxtend their help more.\n";
+ cout<<"\nDates:28 December\n";
+ cout<<"\nVenue:Mark Community Hall\n";
+ cout<<"Time: 8:30";
+ cout<<"Ticket Price: 250INR\n";
+ fo.open("people12.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  s1.display2();
+ }
+ getch();
+ fo.close();
+ cout<<"\n\n\n\n\n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nA mythological stoy about a goddess who created the entire universe. \nThe plot revolves around the consequences when humans build a temple for her first born.\n";
+ cout<<"\nDates:12th October\n";
+ cout<<"\nVenue:Cinepolis Multiplex\n";
+ cout<<"Time: 3:15pm\n";
+ cout<<"Ticket Price: 280INR\n\n";
+ fo.open("people13.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  s1.display3();
+ }
+ getch();
+ fo.close();
+ cout<<"\n\n\n\n\n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nA love story involving vampires and wolves.\nWhen a girl ,Bella  meets a boy named Edward with secrets......\nProblems arise when she falls in love and discovers that he is not a mere mortal.\n";
+ cout<<"\nDates:10th December\n";
+ cout<<"\nVenue:PVR Cinemas\n";
+ cout<<"Time: 11:00\n";
+ cout<<"Ticket Price: 300INR\n\n";
+ fo.open("people14.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  s1.display4();
+ }
+ getch();
+ fo.close();
+ cout<<"\n\n\n\n\n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\nDescription:\nAe Halo!!!!.\n. An event organised by Shiv Entertainment.\nBring your friends and family along and groove to the garba beats. \n Also dance to to the fabulous performances from Falguni Pathak\n";
+ cout<<"\nDates:10th October\n";
+ cout<<"\nVenue:Indoor Stadium\n";
+ cout<<"Time: :30pm\n";
+ cout<<"Ticket Price: 250INR\n\n\n";
+ cout<<"Please Make Sure You Enter Correct Name And Code Because They Further Cannot be Modified.\nOnly Ticket Prices Can be Modified Later By Administrator.\nAnd Please Remember Your Code....\n\n";
+ fo.open("people15.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  s1.display5();
+ }
+ getch();
+ fo.close();
+}
+void showdetails1(int c,int g)
+{
+	if(s1.check()==c)
+   {
+    fstream fo;
+    fo.open("people11.dat",ios::app|ios::in|ios::binary);
+    while(fo.read((char*)&s1,sizeof(s1)))
+    {
+     s1.display1(g);
+    }
+   }
+   getch();
+}
+void showdetails2(int c,int h)
+{
+	if(s1.check()==c)
+   {
+    fstream fo;
+    fo.open("people12.dat",ios::app|ios::in|ios::binary);
+    while(fo.read((char*)&s1,sizeof(s1)))
+    {
+     s1.display2(h);
+    }
+   }
+   getch();
+}
+void showdetails3(int c,int j)
+{
+	if(s1.check()==c)
+   {
+    fstream fo;
+    fo.open("people13.dat",ios::app|ios::in|ios::binary);
+    while(fo.read((char*)&s1,sizeof(s1)))
+    {
+     s1.display3(j);
+    }
+   }
+   getch();
+}
+void showdetails4(int c,int k)
+{
+	if(s1.check()==c)
+   {
+    fstream fo;
+    fo.open("people14.dat",ios::app|ios::in|ios::binary);
+    while(fo.read((char*)&s1,sizeof(s1)))
+    {
+     s1.display4(k);
+    }
+   }
+   getch();
+}
+void showdetails5(int c,int l)
+{
+	if(s1.check()==c)
+   {
+    fstream fo;
+    fo.open("people15.dat",ios::app|ios::in|ios::binary);
+    while(fo.read((char*)&s1,sizeof(s1)))
+    {
+     s1.display5(l);
+    }
+   }
+   getch();
+}
+
+/******************************************************************************************************************************************************************/
+
+void modify1()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tInitial Price Of Ticket Is: 6000INR\n";
+ int p1;
+ cout<<"\t\t\t\t\tEnter Price you want to change: ";
+ cin>>p1;
+ showdetails1(1,p1);
+ getch();
+}
+void modify2()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tInitial Price Of Ticket Is: 250INR\n";
+ int p2;
+ cout<<"\t\t\t\t\tEnter Price you want to change: ";
+ cin>>p2;
+ showdetails2(2,p2);
+ getch();
+}
+void modify3()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tInitial Price Of Ticket Is: 280INR\n";
+ int p3;
+ cout<<"\t\t\t\t\tEnter Price you want to change: ";
+ cin>>p3;
+ showdetails3(3,p3);
+ getch();
+}
+void modify4()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tInitial Price Of Ticket Is: 300INR\n";
+ int p4;
+ cout<<"\t\t\t\t\tEnter Price you want to change: ";
+ cin>>p4;
+ showdetails4(4,p4);
+ getch();
+}
+void modify5()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tInitial Price Of Ticket Is: 250INR\n";
+ int p5;
+ cout<<"\t\t\t\t\tEnter Price you want to change: ";
+ cin>>p5;
+ showdetails5(5,p5);
+ getch();
+}
+
+/*******************************************************************************************************************************************************************/
+void veiw1()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch7;
+ int cnt1=0;
+ int cde1;
+ cout<<"\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people11.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   cout<<"\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cnt1=1;
+  }
+ }
+ if(cnt1==0)
+ cout<<"\t\t\t\t\t\tNo Such Customer Exists";
+ getch();
+}
+void veiw2()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch7;
+ int cnt1=0;
+ int cde1;
+ cout<<"\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people12.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   cout<<"\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cnt1=1;
+  }
+ }
+ if(cnt1==0)
+ cout<<"\t\t\t\t\t\tNo Such Customer Exists";
+ getch();
+}
+void veiw3()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch7;
+ int cnt1=0;
+ int cde1;
+ cout<<"\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people13.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   cout<<"\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cnt1=1;
+  }
+ }
+ if(cnt1==0)
+ cout<<"\t\t\t\t\t\tNo Such Customer Exists";
+ getch();
+}
+void veiw4()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch7;
+ int cnt1=0;
+ int cde1;
+ cout<<"\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people14.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   cout<<"\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cnt1=1;
+  }
+ }
+ if(cnt1==0)
+ cout<<"\t\t\t\t\t\tNo Such Customer Exists";
+ getch();
+}
+void veiw5()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch7;
+ int cnt1=0;
+ int cde1;
+ cout<<"\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people15.dat",ios::app|ios::in|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   cout<<"\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cnt1=1;
+  }
+ }
+ if(cnt1==0)
+ cout<<"\t\t\t\t\t\tNo Such Customer Exists";
+ getch();
+}
+
+/*****************************************************************************************************************************************************************/
+
+void dele1()
+{
+ clrscr();
+ char ch8;
+ int cde1;
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char found='n';
+ cout<<"\n\n\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people11.dat",ios::app|ios::in|ios::binary);
+ ofstream fout;
+ fout.open("temp1.dat",ios::out|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   found='y';
+   cout<<"\n\n\t\t\t\t\t\tCustomer Found....\n";
+   s1.display1();
+   cout<<"\t\t\t\tYou Want to Delete this Account(y/n): ";
+   cin>>ch8;
+   if(ch8=='N'||ch8=='n')
+   {
+    fout.write((char*)&s1,sizeof(s1));
+   }
+  }
+  else
+  fout.write((char*)&s1,sizeof(s1));
+ }
+ if(found=='n')
+  cout<<"\t\t\tEnter Code Doesnt Match With Any Of Customer\n";
+ fo.close();
+ fout.close();
+ remove("people11.dat");
+ rename("temp1.dat","people11.dat");
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 KEITH RICHARDS CONCERT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\tDetails After Deletion Are: \n";
+ showdetails1(1,6000);
+ getch();
+}
+void dele2()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch8;
+ int cde1;
+ char found='n';
+ cout<<"\n\n\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people12.dat",ios::app|ios::in|ios::binary);
+ ofstream fout;
+ fout.open("temp2.dat",ios::out|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   found='y';
+   cout<<"\n\n\t\t\t\t\t\tCustomer Found....\n";
+   s1.display2();
+   cout<<"\t\t\t\tYou Want to Delete this Account(y/n): ";
+   cin>>ch8;
+   if(ch8=='N'||ch8=='n')
+   {
+    fout.write((char*)&s1,sizeof(s1));
+   }
+  }
+  else
+  fout.write((char*)&s1,sizeof(s1));
+ }
+ if(found=='n')
+  cout<<"\t\t\tEnter Code Doesnt Match With Any Of Customer\n";
+ fo.close();
+ fout.close();
+ remove("people12.dat");
+ rename("temp2.dat","people12.dat");
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 SUNSHINE FUNDRAISERS EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\tDetails After Deletion Are: \n";
+ showdetails2(1,250);
+ getch();
+}
+void dele3()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch8;
+ int cde1;
+ char found='n';
+ cout<<"\n\n\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people13.dat",ios::app|ios::in|ios::binary);
+ ofstream fout;
+ fout.open("temp3.dat",ios::out|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   found='y';
+   cout<<"\n\n\t\t\t\t\t\tCustomer Found....\n";
+   s1.display3();
+   cout<<"\t\t\t\tYou Want to Delete this Account(y/n): ";
+   cin>>ch8;
+   if(ch8=='N'||ch8=='n')
+   {
+    fout.write((char*)&s1,sizeof(s1));
+   }
+  }
+  else
+  fout.write((char*)&s1,sizeof(s1));
+ }
+ if(found=='n')
+  cout<<"\t\t\tEnter Code Doesnt Match With Any Of Customer\n";
+ fo.close();
+ fout.close();
+ remove("people13.dat");
+ rename("temp3.dat","people13.dat");
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TUMBAAD MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\tDetails After Deletion Are: \n";
+ showdetails1(3,280);
+ getch();
+}
+void dele4()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch8;
+ int cde1;
+ char found='n';
+ cout<<"\n\n\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people14.dat",ios::app|ios::in|ios::binary);
+ ofstream fout;
+ fout.open("temp4.dat",ios::out|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   found='y';
+   cout<<"\n\n\t\t\t\t\t\tCustomer Found....\n";
+   s1.display4();
+   cout<<"\t\t\t\tYou Want to Delete this Account(y/n): ";
+   cin>>ch8;
+   if(ch8=='N'||ch8=='n')
+   {
+    fout.write((char*)&s1,sizeof(s1));
+   }
+  }
+  else
+  fout.write((char*)&s1,sizeof(s1));
+ }
+ if(found=='n')
+  cout<<"\t\t\tEnter Code Doesnt Match With Any Of Customer\n";
+ fo.close();
+ fout.close();
+ remove("people14.dat");
+ rename("temp4.dat","people14.dat");
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 TWILIGHT MOVIE                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\t\tDetails After Deletion Are: \n";
+ showdetails4(4,300);
+ getch();
+}
+void dele5()
+{
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ char ch8;
+ int cde1;
+ char found='n';
+ cout<<"\n\n\t\t\t\t\t\tEnter Code: ";
+ cin>>cde1;
+ fstream fo;
+ fo.open("people15.dat",ios::app|ios::in|ios::binary);
+ ofstream fout;
+ fout.open("temp5.dat",ios::out|ios::binary);
+ while(fo.read((char*)&s1,sizeof(s1)))
+ {
+  if(cde1==s1.check1())
+  {
+   found='y';
+   cout<<"\n\n\t\t\t\t\t\tCustomer Found....\n";
+   s1.display5();
+   cout<<"\t\t\t\tYou Want to Delete this Account(y/n): ";
+   cin>>ch8;
+   if(ch8=='N'||ch8=='n')
+   {
+    fout.write((char*)&s1,sizeof(s1));
+   }
+  }
+  else
+  fout.write((char*)&s1,sizeof(s1));
+ }
+ if(found=='n')
+  cout<<"\t\t\t\tEnter Code Doesnt Match With Any Of Customer\n";
+ fo.close();
+ fout.close();
+ remove("people15.dat");
+ rename("temp5.dat","people15.dat");
+ clrscr();
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"                                                 GLAM GARBA EVENT                                           \n";
+ cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+ cout<<"\t\t\t\tDetails After Deletion Are: \n";
+ showdetails5(5,250);
+ getch();
+}
+
+/******************************************************************************************************************************************************************/
+
+void main()
+{
+   here6:
+   here5:
+   clrscr();
+   char pwd[5];
+	cout<<"-------------------------------------------------EVENT ORGANISER------------------------------------------------------\n";
+   int ch,ch1;
+   int ans,ans1;
+   cout<<"\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t";
+   cout<<"1.Administrator\n\n\t\t\t\t\t\t2.Customer\n";
+   cout<<"\n\n\t\t\t\t**For First Time Please Select Customer Option.\n";
+   cout<<"\n\t\t\t\t\t\tLogin as: ";
+   cin>>ans;
+   if(ans==1)
+   {
+    here1:
+    clrscr();
+    cout<<"------------------------------------------------------------------------------------------------------------------------\n";
+    cout<<"\n\n\n\n\n\n\n\n\n\n\t\t\tTo Get Login As Administrator Please Enter The Correct Password...........\n";
+    cout<<"\n\t\t\t\tPlease Enter the Password(5 characters): ";
+    int i=0,cnt=0;
+    while(i<5)
+    {
+     pwd[i]=getch();
+     cout<<"*";
+     ++i;
+    }
+    char ini[]={'1','2','3','4','5'};
+    for(i=0;i<5;i++)
+    {
+     if(pwd[i]==ini[i])
+     cnt++;
+    }
+    if(cnt==5)
+    {
+     clrscr();
+     cout<<"\n\n\n\n\n\n\n\n\t\t\t\t\tHELLO ADMINISTRATOR.................\n\n\n\n";
+     cout<<"\t\t\t\t\MENU:\n\n";
+     cout<<"\t\t\t\t1.Search for any customer\n\n";
+     cout<<"\t\t\t\t2.Modify Price Of Ticket For Any Event:\n\n";
+     cout<<"\t\t\t\t3.Delete Any Account For Any Event\n\n";
+     cout<<"\t\t\t\t4.View all Events Along with their Customers\n\n";
+     cout<<"\t\t\t\tEnter your choice: ";
+     cin>>ans1;
+     if(ans1==1)
+     {
+      clrscr();
+      int ch4;
+      cout<<"\n\n\n\n\n\n\n\n\t\tPlease select the event of which you want to SEARCH the details:..................\n";
+      cout<<"\n\n\t\t\t\t\tMenu:\n";
+      cout<<"\t\t\t\t\t1.Keith Richards Concert\n\n";
+      cout<<"\t\t\t\t\t2.Sunshine Fundraisers Event\n\n";
+      cout<<"\t\t\t\t\t3.Tumbaad Movie\n\n";
+      cout<<"\t\t\t\t\t4.Twilight\n\n";
+      cout<<"\t\t\t\t\t5.Glam Garba Event\n\n";
+      cout<<"\t\t\t\t\tEnter Your Choice: ";
+      cin>>ch4;
+      if(ch4==1)
+       veiw1();
+      else
+      if(ch4==2)
+       veiw2();
+      else
+      if(ch4==3)
+       veiw3();
+      else
+      if(ch4==4)
+       veiw4();
+      else
+      if(ch4==5)
+       veiw5();
+       goto here6;
+     }
+     if(ans1==2)
+     {
+      clrscr();
+      int ch5;
+      cout<<"\n\n\n\n\n\n\n\n\t\tPlease select the event of which you want to MODIFY the details of price:............\n";
+      cout<<"\n\n\t\t\t\t\tMenu:\n";
+      cout<<"\t\t\t\t\t1.Keith Richards Concert\n\n";
+      cout<<"\t\t\t\t\t2.Sunshine Fundraisers Event\n\n";
+      cout<<"\t\t\t\t\t3.Tumbaad Movie\n\n";
+      cout<<"\t\t\t\t\t4.Twilight\n\n";
+      cout<<"\t\t\t\t\t5.Glam Garba Event\n\n";
+      cout<<"\t\t\t\t\tEnter Your Choice: ";
+      cin>>ch5;
+      if(ch5==1)
+      {
+       modify1();
+      }
+      if(ch5==2)
+      {
+       modify2();
+      }
+      if(ch5==3)
+      {
+       modify3();
+      }
+      if(ch5==4)
+      {
+       modify4();
+      }
+      if(ch5==5)
+      {
+       modify5();
+      }
+      goto here6;
+     }
+     if(ans1==3)
+     {
+      clrscr();
+      cout<<"\n\n\n\n\n\n\n\n\t\tPlease select the event of which you want to DELETE the details:..........\n";
+      cout<<"\n\n\t\t\t\t\tMenu:\n\n";
+      cout<<"\t\t\t\t\t1.Keith Richards Concert\n\n";
+      cout<<"\t\t\t\t\t2.Sunshine Fundraisers Event\n\n";
+      cout<<"\t\t\t\t\t3.Tumbaad Movie\n\n";
+      cout<<"\t\t\t\t\t4.Twilight\n\n";
+      cout<<"\t\t\t\t\t5.Glam Garba Event\n\n";
+      cout<<"\t\t\t\t\tEnter Your Choice: ";
+      cin>>ch1;
+      if(ch1==1)
+      dele1();
+      else
+      if(ch1==2)
+      dele2();
+      else
+      if(ch1==3)
+      dele3();
+      else
+      if(ch1==4)
+      dele4();
+      else
+      if(ch1==5)
+      dele5();
+      goto here6;
+     }
+     if(ans1==4)
+     {
+      showdetailsall();
+      goto here6;
+     }
+   }
+   if(cnt!=5)
+   {
+    clrscr();
+    cout<<"Wrong Password...........\n";
+    char ch2;
+    cout<<"Want to Retry(y/n)?: ";
+    cin>>ch2;
+    if(ch2=='Y'||ch2=='y')
+     goto here1;
+    else
+     goto here5;
+   }
+  }
+   else
+   if(ans==2)
+   {
+    clrscr();
+    cout<<"\n\n\n\n\n\t\t\t\t\t";
+    cout<<"HELLO USER...........................\n";
+    cout<<"\n\n\t\t\t\t\tMenu:\n\n";
+    cout<<"\t\t\t\t\t1.Keith Richards Concert\n\n";
+    cout<<"\t\t\t\t\t2.Sunshine Fundraisers Event\n\n";
+    cout<<"\t\t\t\t\t3.Tumbaad Movie\n\n";
+    cout<<"\t\t\t\t\t4.Twilight\n\n";
+    cout<<"\t\t\t\t\t5.Glam Garba Event\n\n";
+    cout<<"\t\t\t\t\tEnter Your Choice: ";
+    cin>>ch;
+    switch(ch)
+    {
+     case 1:
+     {
+      krc();
+      goto here5;
+      break;
+     }
+     case 2:
+     {
+      sfe();
+      goto here5;
+      break;
+     }
+     case 3:
+     {
+      tm();
+      goto here5;
+      break;
+     }
+     case 4:
+     {
+      twilight();
+      goto here5;
+      break;
+     }
+     case 5:
+     {
+      gge();
+      goto here5;
+      break;
+     }
+     default:
+     {
+      cout<<"\n\n\n\t\t\tWrong choice Customer..Please Select One of the valid options\n";
+      int ch3;
+      cout<<"\n\n\t\t\t\t\tYou Want to Try Again(y/n): ";
+      if(ch3=='Y'||ch3=='y')
+      goto here5;                                                                                                                                      
+      else
+      break;
+     }
+    }
+    getch();
+  }
+  if(ans!=1||ans!=2)
+  {
+   cout<<"Wrong Choice.\nPlease Select A Valid Option...\n";
+   goto here5;
+   getch();
+  }
+}
+
+
